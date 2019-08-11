@@ -6,7 +6,9 @@ namespace Testando
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Vai se fuder");
+            Console.WriteLine("Ola mundo");
+            int teste = 5 + 5;
+            Console.WriteLine(teste);
 
             Console.ReadLine();
         }
