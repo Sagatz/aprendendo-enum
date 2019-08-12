@@ -1,4 +1,6 @@
 ﻿using System;
+using Testando.Entities;
+using Testando.Entities.Enums;
 
 namespace Testando
 {
@@ -6,11 +8,15 @@ namespace Testando
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ola mundo");
-            int teste = 5 + 5;
-            Console.WriteLine(teste);
 
-            Console.ReadLine();
+            Order order = new Order
+            {
+                Id = 1080,
+                Moment = DateTime.Now,
+                Status = OrderStatus.PendingPayment
+            };
+
+            Console.WriteLine(order);
         }
     }
 }
